@@ -22,7 +22,7 @@ const localStorage = window.localStorage;
 // create questions
 let questions = [
     {
-        question: "Do you feel sad, down, or blue most of the time?",
+        question: "Little interest or pleasure in doing things?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
@@ -30,7 +30,7 @@ let questions = [
         choiceE: "4",
     },
     {
-        question: "Do you feel helpless?",
+        question: "Feeling down, depressed, or hopeless?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
@@ -38,7 +38,7 @@ let questions = [
         choiceE: "4",
     },
     {
-        question: "Do you feel much more talkative or speak faster than usual?",
+        question: "Sleeping less than usual, but still have a lot of energy?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
@@ -46,7 +46,7 @@ let questions = [
         choiceE: "4",
     },
     {
-        question: "Do you engage in behaviors that others consider to be risky?",
+        question: "Starting lots more projects than usual or doing more risky things than usual?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
@@ -54,7 +54,7 @@ let questions = [
         choiceE: "4",
     },
     {
-        question: "Do you experience excessive thinking or worrying?",
+        question: "Feeling nervous, anxious, frightened, worried, or on edge?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
@@ -62,7 +62,7 @@ let questions = [
         choiceE: "4",
     },
     {
-        question: "Do you feel restless or on edge?",
+        question: "Feeling panic or being frightened?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
@@ -70,7 +70,7 @@ let questions = [
         choiceE: "4",
     },
     {
-        question: "Do you get irritated easily or have difficulty controlling anger?",
+        question: "Avoiding situations that make you feel anxious?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
@@ -78,7 +78,7 @@ let questions = [
         choiceE: "4",
     },
     {
-        question: "Do you use drugs other than those required for medical reasons?",
+        question: "Drinking at least 4 drinks of any kind of alcohol in a single day?",
         choiceA: "0",
         choiceB: "1",
         choiceC: "2",
