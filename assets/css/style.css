@@ -1,7 +1,39 @@
 body{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: grey;
+    text-align: center;
+    /* border: 3px solid gray; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("./clouds.jpg");
+    margin: auto;
+    width: 640px; 
+    padding: 200px;
+}
+
+.button{
+    color: white;
+    width : 135px;
+    text-align: center;
+    border : 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.button:hover{
+    border : 2px solid white;
+    transform: scale(1.1);
+}
+
+.numbers {
+    text-align: center;
 }
 
 .question{
@@ -10,33 +42,26 @@ body{
     position: absolute;
     right:0;
     top:0;
+    margin: auto;
+    width: 640px; 
+    padding: 200px;
 }
 
-.question p{
-    margin : 0;
-    padding : 15px;
-    font-size: 1.25em;
-}
-
-.choices{
-    width : 480px;
-    position: absolute;
-    right : 0;
-    top : 125px;
-    padding : 10px
-}
 .choice{
-    display: grid;
-    width : 135px;
-    text-align: center;
-    border : 1px solid;
-    border-radius: 5px;
     cursor: pointer;
-    padding : 5px;
-    background-color: black;
+    border-radius: 10%;
+    background-color: grey;
+    border: none;
     color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px;
 }
+
 .choice:hover{
     border : 2px solid white;
-    color: grey;
+    transform: scale(1.1);
 }
