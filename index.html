@@ -16,7 +16,7 @@
 
 <div id="container">
 
-        <div id="start" class="content">
+        <div id="start">
             <h1>Blueprint Diagnostic Screener (BDS)</h1>
             <p> Please rate each question on a scale from 0 to 4 
                 <div class="numbers">
@@ -51,13 +51,20 @@
 
             </div>
 
+            <!-- <div id="progress"></div> -->
 
-        </div>
+            <div id="scoreContainer" style="display: none"></div>
 
-        <div id="scoreContainer" style="display: none"></div>
+            <div id="results" style="display: none">
+              <p>Thank you for completing the BDS. Please enter your name below to save your results.</p>
+              <p id="result-score"></p>
+              <form id="score-submit" action="">
+                <input id="user-input" type="text"/>
+                <input type="submit" class="submit" value="Submit"/>
+              </form>
+            </div>
 
-        <div id="results" style="display: none">
-          <p id="result-score"></p>
+
         </div>
 
 </div>

@@ -14,7 +14,13 @@ const choiceD = document.getElementById("3");
 
 const choiceE = document.getElementById("4");
 
+// const progress = document.getElementById("progress");
+
 const scoreDiv = document.getElementById("scoreContainer");
+
+const scoreSubmit = document.getElementById("score-submit");
+
+const userInput = document.getElementById("user-input");
 
 const localStorage = window.localStorage;
 
@@ -87,11 +93,10 @@ let questions = [
     }
 ]
 
-// create some variables
-
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
-let score = 0;
+let count = 0;
+let score = 8;
 
 // show a question
 function showQuestion(){
@@ -112,7 +117,16 @@ function startQuiz(){
     start.style.display = "none";
     showQuestion();
     quiz.style.display = "inline-block";
+    // showProgress();
 }
+
+// progress bar
+
+// function showProgress(){
+//     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
+//         progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+//     }
+// }
 
 
 function checkAnswer(answer){
@@ -126,3 +140,28 @@ function checkAnswer(answer){
 }
 
 // score show
+function scoreshow(){
+    scoreDiv.style.display = "block";
+
+    // calculate the amount of question percent answered by the user
+    const scorePerCent = Math.round(100 * score/questions.length);
+
+    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+
+    results.style.display = "block"
+}
+
+
+scoreSubmit.addEventListener('submit', e => {
+  e.preventDefault()
+
+  console.log('form was submitted!')
+
+  const localScores = JSON.parse(localStorage.getItem('scores'))
+
+//   localScores.push(userInput.value)
+
+  localStorage.setItem('scores', JSON.stringify(localScores))
+
+  console.log(localScores)
+})
