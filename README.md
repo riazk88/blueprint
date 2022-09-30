@@ -20,8 +20,25 @@ https://blueprint-ten.vercel.app
 
 ## Technical Choices
 
-I attempted to complete Part 1 and strengthen my backend skills. I used Node.js and was able to build an API. I deployed it onto Heroku. I chose Node.js since this was one of the frameworks I was familiar with from my Coding Bootcamp. For Part 2 I used HTML, CSS, and JavaScript. 
+I attempted to complete Part 1 and strengthen my backend skills. I used Node.js and was able to build an API. I deployed it using Heroku. I chose Node.js since this was one of the frameworks I was familiar with from my Coding Bootcamp. For Part 2 I used HTML, CSS, and JavaScript for my frontend frameworks. 
+
+## Deployment
+
+I initially chose to deploy the entire app on Heroku but ran into some issues connecting with my github. I chose Heroku because I had past experience with it. I decided then to do some research on similar deployment tools and came across Vercel. It was my first time using it and I would choose it again for its simplicity and functionality. 
+
+To ensure an app is highly available and performs well, I would have backup solutions in place in case of service failure by utilizing multiple other servers. I would also want regular automatic backups in place to ensure valuable informtion does not get lost and is easily recovered. This could also help keep the website secure, along with checking the site regularly and installing an SSL certificate. I would also want to make sure the web host is HIPAA compliant. To aid in troubleshooting website issues, I would use Chrome DevTools. I have experience using it and used it with this project as well. 
 
 ## Resume
 
 https://www.dropbox.com/s/dehqm8qqzyz0wrm/KiranRiaz_Resume.pdf?dl=0
+
+## My Other Work
+
+https://github.com/mattkohl82/drink-and-think
+https://github.com/israel0688/workout-workers
+
+Both of these apps were group projects where I took frontend lead.
+
+https://github.com/riazk88/Wanderlust
+
+A solo project I completed on my own, focusing only on my frontend skills.
